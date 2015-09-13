@@ -21,16 +21,13 @@ $(call inherit-product, device/sony/sirius/aosp_d6503.mk)
 # Inherit Omni Shinano common device parts
 $(call inherit-product, device/sony/shinano-common/device_omni.mk)
 
-# Inherit Omni GSM telephony parts
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
-# Inherit Omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit Carbon phone configuration
+$(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 # Recovery
 PRODUCT_COPY_FILES += \
     device/sony/sirius/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
 
-# Override Product Name for OmniROM
-PRODUCT_NAME := omni_sirius
+# Override Product Name for CarbonROM
+PRODUCT_NAME := carbon_sirius-aosp
 PRODUCT_MODEL := Xperia Z2
