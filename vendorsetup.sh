@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo carbon_sirius_aosp-userdebug
+add_lunch_combo cm_sirius_aosp-userdebug

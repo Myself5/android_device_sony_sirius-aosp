@@ -23,14 +23,17 @@ $(call inherit-product, $(DEVICE_PATH)/aosp_d6503.mk)
 # Inherit Omni Shinano common device parts
 $(call inherit-product, device/sony/shinano-common/device_omni.mk)
 
-# Inherit Carbon phone configuration
-$(call inherit-product, vendor/carbon/config/common_phone.mk)
+# Inherit CM common Phone stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Recovery
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/recovery/root/etc/bootrec-device:recovery/root/etc/bootrec-device
 
-# Override Product Name for CarbonROM
+# Override Product Name for CyanogenMod
 PRODUCT_DEVICE := sirius_aosp
-PRODUCT_NAME := carbon_sirius_aosp
+PRODUCT_NAME := cm_sirius_aosp
 PRODUCT_MODEL := Xperia Z2
