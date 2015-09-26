@@ -37,3 +37,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEVICE := sirius_aosp
 PRODUCT_NAME := cm_sirius_aosp
 PRODUCT_MODEL := Xperia Z2
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := D6502,D6503,D6506,D6543,sirius,sirius_aosp
